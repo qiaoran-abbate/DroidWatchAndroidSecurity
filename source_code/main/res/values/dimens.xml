@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_height">200dp</dimen>
+    <dimen name="heading3">48sp</dimen>
+    <dimen name="heading5">24sp</dimen>
+    <dimen name="buttonTextSize">14sp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Droids Watch</string>
+    <string name="welcome_text1">"Welcome!"</string>
+    <string name="welcome_text2">"Droid gathers, and now our watch begins."
+                                "When you are ready, just hit the "
+                                "evaluate button to begin!"</string>
+</resources>

@@ -1,0 +1,32 @@
+UnknownSourcesZero ^ BlacklistedAppZero ^ ApplicationPremissionGoodnessO#er50 => AppSecurityPassed
+UnknownSourcesNotZero => AppSecurityFailed
+BlacklistedAppNotZero => AppSecurityFailed
+ApplicationPremissionGoodnessUnder50 => AppSecurityFailed
+
+AndriodOS#ersionAppro#ed ^ SecurityPatchAppro#ed ^ De#iceModelAppro#ed => De#iceSecurityPassed
+AndriodOS#ersionNotAppro#ed => De#iceSecurityFailed
+SecurityPatchNotAppro#ed => De#iceSecurityFailed
+De#iceModelNotAppro#ed => De#iceSecurityFailed
+
+BootLoaderLocked ^ RootAccessDisabled ^ De#eloperMenuDisabled ^ De#iceLocked => SensorSecurityPassed
+BootLoaderNotLocked => SensorSecurityFailed
+RootAccessEnabled => SensorSecurityFailed
+De#eloperMenuEnabled => SensorSecurityFailed
+De#iceNotLocked => SensorSecurityFailed
+
+SensorDataNotA#ailable => SensorSecurityUnknown
+
+AppSecurityPassed ^ De#iceSecurityPassed ^ SensorSecurityPassed => High
+AppSecurityPassed ^ De#iceSecurityFailed ^ SensorSecurityFailed => Low
+AppSecurityPassed ^ De#iceSecurityPassed ^ SensorSecurityFailed => Low
+AppSecurityPassed ^ De#iceSecurityFailed ^ SensorSecurityPassed => Medium
+AppSecurityFailed ^ De#iceSecurityFailed ^ SensorSecurityFailed => Low
+AppSecurityFailed ^ De#iceSecurityPassed ^ SensorSecurityPassed => Medium
+AppSecurityFailed ^ De#iceSecurityFailed ^ SensorSecurityPassed => Low
+AppSecurityFailed ^ De#iceSecurityPassed ^ SensorSecurityFailed => Low
+
+AppSecurityFailed ^ De#iceSecurityFailed ^ SensorSecurityUnknown => Low
+AppSecurityFailed ^ De#iceSecurityPassed ^ SensorSecurityUnknown => Medium
+AppSecurityPassed ^ De#iceSecurityFailed ^ SensorSecurityUnknown => Medium
+AppSecurityPassed ^ De#iceSecurityPassed ^ SensorSecurityUnknown => Medium
+
